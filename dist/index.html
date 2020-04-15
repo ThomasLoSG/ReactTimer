@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Timer</title>
+    <style>
+      #app{
+        width:1000px;
+        text-align:center;
+        margin:auto;
+      }
+      .timer-text{
+        font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
+        font-size:120px;
+        color:white;
+        background:black;
+        display:inline-block;
+      }
+      .timer-button{
+        font-size:36px;
+        margin:10px;
+      }
+      ul.laps {
+        list-style: none
+      }
+      ul.laps > li {
+        font-size:36px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- React component inside this div. -->
+    <main id="app"></main>
+    <!-- Load React. -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <!-- Load ReactDOM. -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <!-- Load PropTypes. -->
+    <script src="https://unpkg.com/prop-types@15.6/prop-types.min.js" crossorigin></script>
+
+    <script type="module" src="./timer.js" ></script>
+  </body>
+</html>
